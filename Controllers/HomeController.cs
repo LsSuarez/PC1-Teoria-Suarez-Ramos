@@ -28,11 +28,11 @@ namespace PC1_Teoria_Suarez.Controllers
             // Tasa de cambio entre BRL, PEN y USD
             if (fromCurrency == "BRL" && toCurrency == "PEN")
             {
-                rate = 0.25m; // Tasa de cambio de BRL a PEN
+                rate = 0.634m; // 1 BRL = 0.634 PEN (actualizada)
             }
             else if (fromCurrency == "PEN" && toCurrency == "BRL")
             {
-                rate = 4.00m; // Tasa de cambio de PEN a BRL
+                rate = 1.577m; // 1 PEN = 1.577 BRL (inverso de 1.00 BRL = 0.634 PEN)
             }
             else if (fromCurrency == "USD" && toCurrency == "BRL")
             {
@@ -44,11 +44,11 @@ namespace PC1_Teoria_Suarez.Controllers
             }
             else if (fromCurrency == "USD" && toCurrency == "PEN")
             {
-                rate = 3.70m; // Tasa de cambio de USD a PEN
+                rate = 3.64m; // 1 USD = 3.64 PEN (actualizada)
             }
             else if (fromCurrency == "PEN" && toCurrency == "USD")
             {
-                rate = 0.27m; // Tasa de cambio de PEN a USD
+                rate = 0.274m; // 1 PEN = 0.274 USD (inverso de 1 USD = 3.64 PEN)
             }
 
             decimal result = amount * rate;
