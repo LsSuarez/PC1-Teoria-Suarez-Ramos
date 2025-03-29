@@ -25,14 +25,30 @@ namespace PC1_Teoria_Suarez.Controllers
         {
             decimal rate = 1;
 
-            // Tasa de cambio entre BRL y PEN
+            // Tasa de cambio entre BRL, PEN y USD
             if (fromCurrency == "BRL" && toCurrency == "PEN")
             {
-                rate = 0.25m; // Ejemplo de tasa de cambio de BRL a PEN
+                rate = 0.25m; // Tasa de cambio de BRL a PEN
             }
             else if (fromCurrency == "PEN" && toCurrency == "BRL")
             {
-                rate = 4.00m; // Ejemplo de tasa de cambio de PEN a BRL
+                rate = 4.00m; // Tasa de cambio de PEN a BRL
+            }
+            else if (fromCurrency == "USD" && toCurrency == "BRL")
+            {
+                rate = 5.00m; // Tasa de cambio de USD a BRL
+            }
+            else if (fromCurrency == "BRL" && toCurrency == "USD")
+            {
+                rate = 0.20m; // Tasa de cambio de BRL a USD
+            }
+            else if (fromCurrency == "USD" && toCurrency == "PEN")
+            {
+                rate = 3.70m; // Tasa de cambio de USD a PEN
+            }
+            else if (fromCurrency == "PEN" && toCurrency == "USD")
+            {
+                rate = 0.27m; // Tasa de cambio de PEN a USD
             }
 
             decimal result = amount * rate;
