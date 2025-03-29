@@ -41,13 +41,33 @@ namespace PC1_Teoria_Suarez.Controllers
             return RedirectToAction("Boleta", new { amount = amount, result = result });
         }
 
-        // Acción para mostrar el resultado de la conversión
+        // Acción para mostrar el resultado de la conversión y solicitar datos personales
         public IActionResult Boleta(decimal amount, decimal result)
         {
             // Pasar los valores de la cantidad y el resultado de la conversión a la vista
             ViewBag.Amount = amount;
             ViewBag.Result = result;
 
+            return View();
+        }
+
+        // Acción para procesar los datos de la boleta y generar el recibo
+        [HttpPost]
+        public IActionResult GenerateReceipt(string name, string email, decimal amount, decimal result)
+        {
+            // Guardar los datos de la boleta (nombre, correo, cantidad y resultado de la conversión)
+            ViewBag.Name = name;
+            ViewBag.Email = email;
+            ViewBag.Amount = amount;
+            ViewBag.Result = result;
+
+            // Retornar la vista del recibo (boleta final)
+            return View("Receipt");
+        }
+
+        // Acción para mostrar el recibo generado
+        public IActionResult Receipt()
+        {
             return View();
         }
 
