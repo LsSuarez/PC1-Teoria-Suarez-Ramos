@@ -95,3 +95,4 @@ C:\PC1 TEORIA SUAREZ\PC1_Teoria_Suarez\obj\Debug\net9.0\refint\PC1_Teoria_Suarez
 C:\PC1 TEORIA SUAREZ\PC1_Teoria_Suarez\obj\Debug\net9.0\PC1_Teoria_Suarez.pdb
 C:\PC1 TEORIA SUAREZ\PC1_Teoria_Suarez\obj\Debug\net9.0\PC1_Teoria_Suarez.genruntimeconfig.cache
 C:\PC1 TEORIA SUAREZ\PC1_Teoria_Suarez\obj\Debug\net9.0\ref\PC1_Teoria_Suarez.dll
+C:\PC1 TEORIA SUAREZ\PC1_Teoria_Suarez\obj\Debug\net9.0\PC1_Teoria_Suarez.sourcelink.json
